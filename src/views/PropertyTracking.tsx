@@ -109,7 +109,7 @@ const PropertyTracking = () => {
             id,
             propertyName: subscription?.title || '-',
             userName: [user?.first_name, user?.last_name].filter(Boolean).join(' ').trim() || user?.email || '-',
-            address: user?.country || '-',
+            address: item?.address || '-',
             price: item?.price || '-',
             location: user?.country || '-',
             customerType: user?.describe_yourself_option || '-',
@@ -344,7 +344,7 @@ const PropertyTracking = () => {
                                         const propertyName = subscription?.title || '-'
                                         const userName = [user?.first_name, user?.last_name].filter(Boolean).join(' ').trim() || user?.email || '-'
                                         const userEmail = user?.email || '-'
-                                        const address = user?.country || '-'
+                                        const address = item?.address || '-'
                                         const price = item?.price?.toString?.() || item?.price || '-'
                                         const currency = item?.currency || '-'
                                         const location = user?.country || '-'

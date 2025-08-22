@@ -1,0 +1,28 @@
+{
+    "nav": {
+        "dashboard": "Dashboard",
+        "userManagement": "User Management",
+        "propertyTracking": "Property Tracking",
+        "subscription": "Subscription",
+        "financialMetrics": "Financial Metrics",
+        "engagementMetrics": "Engagement Metrics",
+        "logout": "Logout",
+        "home": "Dashboard",
+        "singleMenuItem": "Property",
+        "singleMenuItem1": "User Management",
+        "collapseMenu": {
+            "collapseMenu": "Collapse menu item",
+            "item1": "Collapse menu item 1",
+            "item2": "Collapse menu item 2"
+        },
+        "groupMenu": {
+            "groupMenu": "Group menu",
+            "single": "Group single menu item",
+            "collapse": {
+                "collapse": "Group collapse menu",
+                "item1": "Group collapse menu item 1",
+                "item2": "Group collapse menu item 2"
+            }
+        }
+    }
+}

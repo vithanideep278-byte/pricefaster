@@ -1,0 +1,91 @@
+import {
+    NAV_ITEM_TYPE_TITLE,
+    NAV_ITEM_TYPE_ITEM,
+    NAV_ITEM_TYPE_COLLAPSE
+} from '@/constants/navigation.constant'
+import type { NavigationTree } from '@/@types/navigation'
+
+const navigationConfig: NavigationTree[] = [
+    {
+        key: 'dashboard',
+        path: '/dashboard',
+        title: 'Dashboard',
+        translateKey: 'nav.dashboard',
+        icon: 'home',
+        type: NAV_ITEM_TYPE_ITEM,
+        authority: [],
+        subMenu: [],
+    },
+    {
+        key: 'underpriceProperty',
+        path: '/underprice-property',
+        title: 'Underprice Property',
+        translateKey: 'nav.underpriceProperty',
+        icon: 'building',
+        type: NAV_ITEM_TYPE_ITEM,
+        authority: [],
+        subMenu: [],
+    },
+    {
+        key: 'userManagement',
+        path: '/user-management',
+        title: 'User Management',
+        translateKey: 'nav.userManagement',
+        icon: 'users',
+        type: NAV_ITEM_TYPE_ITEM,
+        authority: [],
+        subMenu: [],
+    },
+    {
+        key: 'propertyTracking',
+        path: '/property-tracking',
+        title: 'Property Tracking',
+        translateKey: 'nav.propertyTracking',
+        icon: 'mapPin',
+        type: NAV_ITEM_TYPE_ITEM,
+        authority: [],
+        subMenu: [],
+    },
+    {
+        key: 'subscription',
+        path: '/subscription',
+        title: 'Subscription',
+        translateKey: 'nav.subscription',
+        icon: 'priceTag',
+        type: NAV_ITEM_TYPE_ITEM,
+        authority: [],
+        subMenu: [],
+    },
+    {
+        key: 'financialMetrics',
+        path: '/financial-metrics',
+        title: 'Financial Metrics',
+        translateKey: 'nav.financialMetrics',
+        icon: 'barChart',
+        type: NAV_ITEM_TYPE_ITEM,
+        authority: [],
+        subMenu: [],
+    },
+    // {
+    //     key: 'engagementMetrics',
+    //     path: '/engagement-metrics',
+    //     title: 'Engagement Metrics',
+    //     translateKey: 'nav.engagementMetrics',
+    //     icon: 'userGear',
+    //     type: NAV_ITEM_TYPE_ITEM,
+    //     authority: [],
+    //     subMenu: [],
+    // },
+    {
+        key: 'logout',
+        path: '/logout',
+        title: 'Logout',
+        translateKey: 'nav.logout',
+        icon: 'logout',
+        type: NAV_ITEM_TYPE_ITEM,
+        authority: [],
+        subMenu: [],
+    },
+]
+
+export default navigationConfig

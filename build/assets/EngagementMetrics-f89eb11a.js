@@ -1,1 +1,0 @@
-import{j as e}from"./index-c61e8b64.js";const s=()=>e.jsx("div",{className:"min-h-screen w-full",children:e.jsx("h1",{className:"text-2xl font-bold text-gray-800 mb-6",children:"Engagement Metrics"})});export{s as default};

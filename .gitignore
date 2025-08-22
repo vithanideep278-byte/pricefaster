@@ -7,21 +7,68 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-build
+# Dependency directories
+node_modules/
+dist/
+dist-ssr/
 *.local
-package-lock.json
 
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
-.idea
+.idea/
 .DS_Store
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
-.vite-cache/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+.env.development.local
+.env.production.local
+.env.test.local
+build/
+
+# Cache / Temp
+.cache/
+.temp/
+.tmp/
+coverage/
+*.tsbuildinfo
+
+# Vite specific
+vite.config.timestamp*
+vite.config.*.timestamp*
+
+# OS specific
+Thumbs.db
+ehthumbs.db
+Icon?
+Desktop.ini
+
+# Yarn / NPM / PNPM
+.yarn/*
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+.pnp.*
+.pnpm-debug.log*
+
+# Testing
+jest-html-reporters-*.html
+jest-coverage/
+cypress/videos/
+cypress/screenshots/
+playwright-report/
+test-results/
+
+# Misc
+*.tgz
+*.tar.gz
+*.zip
+*.gz

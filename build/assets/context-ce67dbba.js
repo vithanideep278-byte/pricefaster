@@ -1,0 +1,1 @@
+import{r as t}from"./index-c61e8b64.js";const o=t.createContext(null),n=o.Provider,u=o.Consumer;function s(){return t.useContext(o)}const r=t.createContext(null);r.Provider;r.Consumer;function C(){return t.useContext(r)}export{n as F,C as a,u as b,s as u};

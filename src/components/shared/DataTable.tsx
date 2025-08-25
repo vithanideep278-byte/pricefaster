@@ -355,7 +355,7 @@ function _DataTable<T>(
             </Table>
             </div>
             {!hidePagination && (
-                <div className="flex items-center justify-between mt-4">
+                <div className="flex flex-wrap items-center justify-end gap-2 mt-4 sm:flex-nowrap sm:justify-between">
                     <Pagination
                         pageSize={pageSize}
                         currentPage={pageIndex}

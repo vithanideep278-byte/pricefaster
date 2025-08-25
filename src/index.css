@@ -28,3 +28,13 @@ input::-webkit-inner-spin-button {
 input[type=number] {
   -moz-appearance: textfield;
 }
+
+.user-metrics-card .card-body{
+  padding: 20px 16px !important;
+}
+.property-card .card-body{
+  padding: 20px 16px !important;
+}
+.revenue-card .card-body{
+  padding: 20px 16px !important;
+}

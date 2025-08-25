@@ -382,13 +382,13 @@ const Dashboard = () => {
             {/* Section 1: User Metrics */}
             <div className="mb-6">
                 <h2 className="text-[#202224] font-nunito text-[18px] font-bold leading-none tracking-[-0.114px] mb-[20px]">User Metrics</h2>
-                <div className="grid grid-cols-1 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-12 gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-12 gap-4">
                     {/* Total Users Card */}
-                    <Card className="bg-white rounded-[14px] shadow-[6px_6px_54px_0_rgba(0,0,0,0.05)] col-span-1 md:col-span-3 lg:col-span-4 xl:col-span-3">
+                    <Card className="bg-white rounded-[14px] shadow-[6px_6px_54px_0_rgba(0,0,0,0.05)] col-span-1 md:col-span-3 lg:col-span-4 xl:col-span-3 h-[161px] user-metrics-card">
                         <div className="relative">
                             <div className='flex justify-between items-start mb-[29px]'>
                                 <div className="">
-                                    <h3 className="text-[#202224] font-nunito text-[18px] font-bold leading-normal tracking-[-0.114px] opacity-70 mb-[13px]">Total Users</h3>
+                                    <h3 className="text-[#202224] font-nunito 2xl:text-[18px] xl:text-[17px] lg:text-[16px] md:text-[15px] sm:text-[14px] text-[13px] font-bold leading-normal tracking-[-0.114px] opacity-70 mb-[13px] ">Total Users</h3>
                                     <span className="text-[#202224] font-nunito text-[28px] not-italic font-bold leading-none tracking-[1px]">{dashboard?.userStats?.totalUsers ?? 0}</span>
                                 </div>
                                 <div className=" rounded-lg flex items-center justify-center">
@@ -407,11 +407,11 @@ const Dashboard = () => {
                     </Card>
 
                     {/* Active Users Card */}
-                    <Card className="bg-white rounded-[14px] shadow-[6px_6px_54px_0_rgba(0,0,0,0.05)] col-span-1 md:col-span-3 lg:col-span-4 xl:col-span-3">
+                    <Card className="bg-white rounded-[14px] shadow-[6px_6px_54px_0_rgba(0,0,0,0.05)] col-span-1 md:col-span-3 lg:col-span-4 xl:col-span-3 h-[161px] user-metrics-card">
                         <div className="relative">
                             <div className='flex justify-between items-start mb-[29px]'>
                                 <div className="">
-                                    <h3 className="text-[#202224] font-nunito text-[18px] font-bold leading-normal tracking-[-0.114px] opacity-70 mb-[13px]">Active Users</h3>
+                                    <h3 className="text-[#202224] font-nunito 2xl:text-[18px] xl:text-[17px] lg:text-[16px] md:text-[15px] sm:text-[14px] text-[13px] font-bold leading-normal tracking-[-0.114px] opacity-70 mb-[13px]">Active Users</h3>
                                     <span className="text-[#202224] font-nunito text-[28px] not-italic font-bold leading-none tracking-[1px]">{dashboard?.userStats?.activeUsers ?? 0}</span>
                                 </div>
                                 <div className=" rounded-lg flex items-center justify-center">
@@ -429,11 +429,11 @@ const Dashboard = () => {
                     </Card>
 
                     {/* Monthly New Users Card */}
-                    <Card className="bg-white rounded-[14px] shadow-[6px_6px_54px_0_rgba(0,0,0,0.05)] col-span-1 md:col-span-3 lg:col-span-4 xl:col-span-3">
-                        <div className=" relative">
+                    <Card className="bg-white rounded-[14px] shadow-[6px_6px_54px_0_rgba(0,0,0,0.05)] col-span-1 md:col-span-3 lg:col-span-4 xl:col-span-3 h-[161px] user-metrics-card">
+                        <div className="relative text-left">
                             <div className='flex justify-between items-start mb-[29px]'>
                                 <div className="">
-                                    <h3 className="text-[#202224] font-nunito text-[18px] font-bold leading-normal tracking-[-0.114px] opacity-70 mb-[13px]">Monthly New Users</h3>
+                                    <h3 className="text-[#202224] font-nunito 2xl:text-[18px] xl:text-[17px] lg:text-[16px] md:text-[15px] sm:text-[14px] text-[13px] font-bold leading-normal tracking-[-0.114px] opacity-70 mb-[13px]">Monthly New Users</h3>
                                     <span className="text-[#202224] font-nunito text-[28px] not-italic font-bold leading-none tracking-[1px]">{dashboard?.userStats?.newUsersThisMonth ?? 0}</span>
                                 </div>
                                 <div className=" rounded-lg flex items-center justify-center">
@@ -451,11 +451,11 @@ const Dashboard = () => {
                     </Card>
 
                     {/* Update Rate Card */}
-                    <Card className="bg-white rounded-[14px] shadow-[6px_6px_54px_0_rgba(0,0,0,0.05)] col-span-1 md:col-span-3 lg:col-span-4 xl:col-span-3">
+                    <Card className="bg-white rounded-[14px] shadow-[6px_6px_54px_0_rgba(0,0,0,0.05)] col-span-1 md:col-span-3 lg:col-span-4 xl:col-span-3 h-[161px] user-metrics-card">
                         <div className=" relative">
                             <div className='flex justify-between items-start mb-[29px]'>
                                 <div className="">
-                                    <h3 className="text-[#202224] font-nunito text-[18px] font-bold leading-normal tracking-[-0.114px] opacity-70 mb-[13px]">Growth Rate</h3>
+                                    <h3 className="text-[#202224] font-nunito 2xl:text-[18px] xl:text-[17px] lg:text-[16px] md:text-[15px] sm:text-[14px] text-[13px] font-bold leading-normal tracking-[-0.114px] opacity-70 mb-[13px]">Growth Rate</h3>
                                     <span className="text-[#202224] font-nunito text-[28px] not-italic font-bold leading-none tracking-[1px]">{dashboard ? `${dashboard.userStats?.growthRate ?? 0}%` : '0%'}</span>
                                 </div>
                                 <div className=" rounded-lg flex items-center justify-center">
@@ -480,40 +480,40 @@ const Dashboard = () => {
                 <h2 className="text-[#202224] font-nunito text-[18px] font-bold leading-none tracking-[-0.114px] mb-[20px]">Property</h2>
                 <div className="grid grid-cols-1 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-12 gap-6">
                     {/* Total Properties Tracked Card */}
-                    <Card className="bg-white rounded-[14px] shadow-[6px_6px_54px_0_rgba(0,0,0,0.05)] col-span-1 md:col-span-3 exact-lg:col-span-4 lg:col-span-2 xl:col-span-3">
+                    <Card className="bg-white rounded-[14px] shadow-[6px_6px_54px_0_rgba(0,0,0,0.05)] col-span-1 md:col-span-3 exact-lg:col-span-4 lg:col-span-2 xl:col-span-3 property-card">
                         <div className="">
                             <div className="flex justify-between items-start ">
-                                <h3 className="text-[#202224] font-nunito text-[18px] font-bold leading-normal tracking-[-0.114px] opacity-70 mb-[13px]">Total Properties Tracked</h3>
+                                <h3 className="text-[#202224] font-nunito 2xl:text-[18px] xl:text-[17px] lg:text-[16px] md:text-[15px] sm:text-[14px] text-[13px] font-bold leading-normal tracking-[-0.114px] opacity-70 mb-[13px]">Total Properties Tracked</h3>
                             </div>
                             <span className="text-[#202224] font-nunito text-[28px] not-italic font-bold leading-none tracking-[1px]">{dashboard?.propertyStats?.totalProperty ?? 0}</span>
                         </div>
                     </Card>
 
                     {/* Active Property Track Card */}
-                    <Card className="bg-white rounded-[14px] shadow-[6px_6px_54px_0_rgba(0,0,0,0.05)] col-span-1 exact-lg:col-span-4 md:col-span-3 lg:col-span-2 xl:col-span-3">
+                    <Card className="bg-white rounded-[14px] shadow-[6px_6px_54px_0_rgba(0,0,0,0.05)] col-span-1 exact-lg:col-span-4 md:col-span-3 lg:col-span-2 xl:col-span-3 property-card">
                         <div className="">
                             <div className="flex justify-between items-start">
-                                <h3 className="text-[#202224] font-nunito text-[18px] font-bold leading-normal tracking-[-0.114px] opacity-70 mb-[13px]">Active Property Track</h3>
+                                <h3 className="text-[#202224] font-nunito 2xl:text-[18px] xl:text-[17px] lg:text-[16px] md:text-[15px] sm:text-[14px] text-[13px] font-bold leading-normal tracking-[-0.114px] opacity-70 mb-[13px]">Active Property Track</h3>
                             </div>
                             <span className="text-[#202224] font-nunito text-[28px] not-italic font-bold leading-none tracking-[1px]">{dashboard?.propertyStats?.activeProperty ?? 0}</span>
                         </div>
                     </Card>
 
                     {/* Average Tracked Card */}
-                    <Card className="bg-white rounded-[14px] shadow-[6px_6px_54px_0_rgba(0,0,0,0.05)] col-span-1 exact-lg:col-span-4 md:col-span-3 lg:col-span-2 xl:col-span-3">
+                    <Card className="bg-white rounded-[14px] shadow-[6px_6px_54px_0_rgba(0,0,0,0.05)] col-span-1 exact-lg:col-span-4 md:col-span-3 lg:col-span-2 xl:col-span-3 property-card">
                         <div className="">
                             <div className="flex justify-between items-start">
-                                <h3 className="text-[#202224] font-nunito text-[18px] font-bold leading-normal tracking-[-0.114px] opacity-70 mb-[13px]">Average Tracked</h3>
+                                <h3 className="text-[#202224] font-nunito 2xl:text-[18px] xl:text-[17px] lg:text-[16px] md:text-[15px] sm:text-[14px] text-[13px] font-bold leading-normal tracking-[-0.114px] opacity-70 mb-[13px]">Average Tracked</h3>
                             </div>
                             <span className="text-[#202224] font-nunito text-[28px] not-italic font-bold leading-none tracking-[1px]">{dashboard ? Number(dashboard?.propertyStats?.avgPropertyTrack ?? 0).toFixed(3) : '0.000'}</span>
                         </div>
                     </Card>
 
                     {/* Average Price Drop Card */}
-                    <Card className="bg-white rounded-[14px] shadow-[6px_6px_54px_0_rgba(0,0,0,0.05)] col-span-1 exact-lg:col-span-4 md:col-span-3 lg:col-span-2 xl:col-span-3">
+                    <Card className="bg-white rounded-[14px] shadow-[6px_6px_54px_0_rgba(0,0,0,0.05)] col-span-1 exact-lg:col-span-4 md:col-span-3 lg:col-span-2 xl:col-span-3 property-card">
                         <div className="">
                             <div className="flex justify-between items-start">
-                                <h3 className="text-[#202224] font-nunito text-[18px] font-bold leading-normal tracking-[-0.114px] opacity-70 mb-[13px]">Average Price Drop</h3>
+                                <h3 className="text-[#202224] font-nunito 2xl:text-[18px] xl:text-[17px] lg:text-[16px] md:text-[15px] sm:text-[14px] text-[13px] font-bold leading-normal tracking-[-0.114px] opacity-70 mb-[13px]">Average Price Drop</h3>
                             </div>
                             <span className="text-[#202224] font-nunito text-[28px] not-italic font-bold leading-none tracking-[1px]">{dashboard?.propertyStats?.avgPriceDrop ?? 0}</span>
                         </div>
@@ -585,10 +585,10 @@ const Dashboard = () => {
                 <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
                     {/* Monthly Recurring Revenue (MRR) Card */}
                     <div className="md:col-span-6 lg:col-span-6 xl:col-span-4">
-                        <Card className="bg-white rounded-[14px] shadow-[6px_6px_54px_0_rgba(0,0,0,0.05)]">
+                        <Card className="bg-white rounded-[14px] shadow-[6px_6px_54px_0_rgba(0,0,0,0.05)] revenue-card">
                             <div className="">
                                 <div className="flex justify-between items-start mb-4">
-                                    <h3 className="text-[#202224] font-nunito text-[18px] font-bold leading-normal tracking-[-0.114px] opacity-70">Monthly Recurring Revenue (MRR)</h3>
+                                    <h3 className="text-[#202224] font-nunito 2xl:text-[18px] xl:text-[17px] lg:text-[16px] md:text-[15px] sm:text-[14px] text-[13px] font-bold leading-normal tracking-[-0.114px] opacity-70">Monthly Recurring Revenue (MRR)</h3>
                                 </div>
                                 <span className="text-[#202224] font-nunito text-[28px] not-italic font-bold leading-none tracking-[1px]">{dashboard?.revenueStats?.monthlyRecurringRevenue ?? 0}</span>
                             </div>
@@ -597,10 +597,10 @@ const Dashboard = () => {
 
                     {/* Refund Payments Issued Card */}
                     <div className="md:col-span-6 lg:col-span-6 xl:col-span-4">
-                        <Card className="bg-white rounded-[14px] shadow-[6px_6px_54px_0_rgba(0,0,0,0.05)]">
+                        <Card className="bg-white rounded-[14px] shadow-[6px_6px_54px_0_rgba(0,0,0,0.05)] revenue-card">
                             <div className="">
                                 <div className="flex justify-between items-start mb-4">
-                                    <h3 className="text-[#202224] font-nunito text-[18px] font-bold leading-normal tracking-[-0.114px] opacity-70">Refund Payments Issued</h3>
+                                    <h3 className="text-[#202224] font-nunito 2xl:text-[18px] xl:text-[17px] lg:text-[16px] md:text-[15px] sm:text-[14px] text-[13px] font-bold leading-normal tracking-[-0.114px] opacity-70">Refund Payments Issued</h3>
                                 </div>
                                 <span className="text-[#202224] font-nunito text-[28px] not-italic font-bold leading-none tracking-[1px]">{`${dashboard?.revenueStats?.refundRequestsIssued?.count ?? 0}/$${dashboard?.revenueStats?.refundRequestsIssued?.amount ?? 0}`}</span>
                             </div>
@@ -609,10 +609,10 @@ const Dashboard = () => {
 
                     {/* Conversion Rate Card */}
                     <div className="md:col-span-6 lg:col-span-6 xl:col-span-4">
-                        <Card className="bg-white rounded-[14px] shadow-[6px_6px_54px_0_rgba(0,0,0,0.05)]">
+                        <Card className="bg-white rounded-[14px] shadow-[6px_6px_54px_0_rgba(0,0,0,0.05)] revenue-card">
                             <div className="">
                                 <div className="flex justify-between items-start mb-4">
-                                    <h3 className="text-[#202224] font-nunito text-[18px] font-bold leading-normal tracking-[-0.114px] opacity-70">Conversion Rate</h3>
+                                    <h3 className="text-[#202224] font-nunito 2xl:text-[18px] xl:text-[17px] lg:text-[16px] md:text-[15px] sm:text-[14px] text-[13px] font-bold leading-normal tracking-[-0.114px] opacity-70">Conversion Rate</h3>
                                 </div>
                                 <span className="text-[#202224] font-nunito text-[28px] not-italic font-bold leading-none tracking-[1px]">{dashboard ? `${Number(dashboard?.revenueStats?.conversionRate ?? 0).toFixed(2)}%` : '0%'}</span>
                             </div>

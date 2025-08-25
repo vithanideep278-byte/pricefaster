@@ -38,3 +38,26 @@ input[type=number] {
 .revenue-card .card-body{
   padding: 20px 16px !important;
 }
+
+/* Fix card layout between 1280px and 1376px so titles & content don't cramp */
+@media (min-width: 1280px) and (max-width: 1376px) {
+  /* .user-metrics-card .card-body,
+  .property-card .card-body,
+  .revenue-card .card-body {
+    padding: 20px 18px !important;
+  } */
+
+  .user-metrics-card h3,
+  .property-card h3,
+  .revenue-card h3 {
+    font-size: 15px !important;
+    line-height: 1.25 !important;
+    margin-bottom: 12px !important;
+  }
+
+  .user-metrics-card img,
+  .property-card img {
+    max-width: 56px;
+    height: auto;
+  }
+}

@@ -478,14 +478,14 @@ const Dashboard = () => {
             {/* Section 5: Property */}
             <div className="mb-6">
                 <h2 className="text-[#202224] font-nunito text-[18px] font-bold leading-none tracking-[-0.114px] mb-[20px]">Property</h2>
-                <div className="grid grid-cols-1 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-12 gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-12 gap-5">
                     {/* Total Properties Tracked Card */}
                     <Card className="bg-white rounded-[14px] shadow-[6px_6px_54px_0_rgba(0,0,0,0.05)] col-span-1 md:col-span-3 exact-lg:col-span-4 lg:col-span-2 xl:col-span-3 property-card">
                         <div className="">
                             <div className="flex justify-between items-start ">
                                 <h3 className="text-[#202224] font-nunito 2xl:text-[18px] xl:text-[17px] lg:text-[16px] md:text-[15px] sm:text-[14px] text-[13px] font-bold leading-normal tracking-[-0.114px] opacity-70 mb-[13px]">Total Properties Tracked</h3>
                             </div>
-                            <span className="text-[#202224] font-nunito text-[28px] not-italic font-bold leading-none tracking-[1px]">{dashboard?.propertyStats?.totalProperty ?? 0}</span>
+                            <span className="text-[#202224] font-nunito text-[27px] not-italic font-bold leading-none tracking-[1px]">{dashboard?.propertyStats?.totalProperty ?? 0}</span>
                         </div>
                     </Card>
 
@@ -495,7 +495,7 @@ const Dashboard = () => {
                             <div className="flex justify-between items-start">
                                 <h3 className="text-[#202224] font-nunito 2xl:text-[18px] xl:text-[17px] lg:text-[16px] md:text-[15px] sm:text-[14px] text-[13px] font-bold leading-normal tracking-[-0.114px] opacity-70 mb-[13px]">Active Property Track</h3>
                             </div>
-                            <span className="text-[#202224] font-nunito text-[28px] not-italic font-bold leading-none tracking-[1px]">{dashboard?.propertyStats?.activeProperty ?? 0}</span>
+                            <span className="text-[#202224] font-nunito text-[27px] not-italic font-bold leading-none tracking-[1px]">{dashboard?.propertyStats?.activeProperty ?? 0}</span>
                         </div>
                     </Card>
 
@@ -505,7 +505,7 @@ const Dashboard = () => {
                             <div className="flex justify-between items-start">
                                 <h3 className="text-[#202224] font-nunito 2xl:text-[18px] xl:text-[17px] lg:text-[16px] md:text-[15px] sm:text-[14px] text-[13px] font-bold leading-normal tracking-[-0.114px] opacity-70 mb-[13px]">Average Tracked</h3>
                             </div>
-                            <span className="text-[#202224] font-nunito text-[28px] not-italic font-bold leading-none tracking-[1px]">{dashboard ? Number(dashboard?.propertyStats?.avgPropertyTrack ?? 0).toFixed(3) : '0.000'}</span>
+                            <span className="text-[#202224] font-nunito text-[27px] not-italic font-bold leading-none tracking-[1px]">{dashboard ? Number(dashboard?.propertyStats?.avgPropertyTrack ?? 0).toFixed(3) : '0.000'}</span>
                         </div>
                     </Card>
 
@@ -515,7 +515,7 @@ const Dashboard = () => {
                             <div className="flex justify-between items-start">
                                 <h3 className="text-[#202224] font-nunito 2xl:text-[18px] xl:text-[17px] lg:text-[16px] md:text-[15px] sm:text-[14px] text-[13px] font-bold leading-normal tracking-[-0.114px] opacity-70 mb-[13px]">Average Price Drop</h3>
                             </div>
-                            <span className="text-[#202224] font-nunito text-[28px] not-italic font-bold leading-none tracking-[1px]">{dashboard?.propertyStats?.avgPriceDrop ?? 0}</span>
+                            <span className="text-[#202224] font-nunito text-[26px] not-italic font-bold leading-none tracking-[1px]">{dashboard?.propertyStats?.avgPriceDrop ?? 0}</span>
                         </div>
                     </Card>
                 </div>
